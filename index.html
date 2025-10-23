@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mona Alkhateeb - My Lifestyle 🌸</title>
+  <style>
+    body {
+      font-family: 'Poppins', Arial, sans-serif;
+      background: linear-gradient(135deg, #8e2de2, #4a00e0);
+      color: #fff;
+      margin: 0;
+      padding: 0;
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+    }
+
+    .container {
+      background: rgba(255, 255, 255, 0.1);
+      border-radius: 20px;
+      padding: 30px;
+      box-shadow: 0 0 25px rgba(0, 0, 0, 0.3);
+      width: 90%;
+      max-width: 430px;
+      margin: 20px auto;
+    }
+
+    .avatar {
+      width: 130px;
+      height: 130px;
+      border-radius: 50%;
+      border: 3px solid white;
+      object-fit: cover;
+      margin-bottom: 15px;
+    }
+
+    h1 {
+      margin-top: 0;
+      margin-bottom: 5px;
+    }
+
+    p {
+      font-size: 0.95em;
+      color: #ddd;
+      margin-bottom: 25px;
+    }
+
+    .links a {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      background: rgba(255, 255, 255, 0.15);
+      color: white;
+      text-decoration: none;
+      padding: 12px;
+      border-radius: 30px;
+      margin: 10px 0;
+      font-size: 1em;
+      transition: all 0.3s ease;
+    }
+
+    .links a:hover {
+      transform: scale(1.08);
+      background: rgba(255, 255, 255, 0.3);
+    }
+
+    .links img {
+      width: 22px;
+      height: 22px;
+    }
+
+    .qr {
+      background: white;
+      padding: 12px;
+      border-radius: 12px;
+      display: inline-block;
+      margin-top: 20px;
+    }
+
+    footer {
+      margin-top: 35px;
+      font-size: 0.85em;
+      color: #ccc;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <img src="https://via.placeholder.com/130" alt="Mona Alkhateeb" class="avatar">
+    <h1>Mona Alkhateeb</h1>
+    <p>✨ Welcome to my world — discover my lifestyle, wellness, and beauty choices ✨</p>
+
+    <div class="links">
+      <a href="https://www.instagram.com/Mona30.11" target="_blank">
+        <img src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/instagram.svg" alt="Instagram">
+        Instagram
+      </a>
+      <a href="tel:+967770128664">
+        <img src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/whatsapp.svg" alt="Phone">
+        Call me: +967 770 128 664
+      </a>
+      <a href="https://mylifestyleedu.com/myworld/Mona111" target="_blank">
+        <img src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/googlechrome.svg" alt="Website">
+        MyLifestyle Edu
+      </a>
+      <a href="https://mylifestylenet.com/myworld/Mona111" target="_blank">
+        <img src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/googlechrome.svg" alt="Website">
+        MyLifestyle Net
+      </a>
+    </div>
+
+    <h3 style="margin-top:25px;">📲 Scan QR to open this page</h3>
+    <div class="qr" id="qrcode"></div>
+  </div>
+
+  <footer>© 2025 Mona Alkhateeb | All Rights Reserved</footer>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
+  <script>
+    // 🔗 when you upload this to GitHub, replace with your real page link:
+    const myPageLink = "https://yourusername.github.io/mona-links/";
+
+    new QRCode(document.getElementById("qrcode"), {
+      text: myPageLink,
+      width: 180,
+      height: 180
+    });
+  </script>
+
+</body>
+</html>
